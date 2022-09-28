@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Questao 05</title>
+    <title>Questão 05</title>
 </head>
-<body>
-    
 
+<body>
     <script>
-        var num_centena = Number(prompt("Digite um numero: "))
-        var valor_divisao = num_centena / 10
-        if (valor_divisao >= 10) {
-            alert(`Numero: ${valor_divisao.toFixed(2)}` )
+        var valor_centena = Number(prompt("Digite uma centena: "))
+
+        if (Math.abs(valor_centena) / 100 >= 1) {
+            let aux_temp = valor_centena.toString();
+            let array_centena = aux_temp.split('');
+            alert(`${(array_centena.reverse()).toString().replaceAll(',', '')}`)
         } else {
-            alert("Não é uma centena")
+            alert("O número inserido não é uma centena")
         }
-        
     </script>
 </body>
+
 </html>
