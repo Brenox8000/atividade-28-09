@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 01</title>
+</head>
+<body>
+    <script>
+         const preco_produto = Number(prompt("Preço do Produto: "))
+         const novo_preco = preco_produto - preco_produto * 0.15
+         if(novo_preco >= 500){
+            alert(`Preço do novo produto R$: ${novo_preco.toFixed(2)}\ CARO`)
+         }else{
+            alert(`Preço do novo produto R$: ${novo_preco.toFixed(2)}\n NOVO`)
+         }
+    </script>
+</body>
+</html>
